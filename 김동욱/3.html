@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+         *{
+            border-collapse: collapse;
+            margin: 0px;
+            padding: 0px;
+            text-decoration: none;
+            color: black;
+            list-style: none;
+        }
+     .blankPosition{
+        width: 100%;
+        height: 400px;
+        background: navy;
+     }
+
+     .relativePosition > div{
+            width: 100%;
+            height: 300px;
+            background: wheat;
+     }
+     .relativePosition > dir{
+        padding: 50px;
+        background: red;
+        margin-top: 10px;
+     }
+     .relativePosition > dir:first-child{
+        position: relative;
+        top: -100px;
+     }
+
+     .absolutePosition{
+        width: 100%;
+        height: 300px;
+        background: violet;
+     }
+     .absolutePosition > div{
+       position: absolute;
+        right: 0px;
+        bottom: 0px;
+        width: 400px;
+        height: 100px;
+     }
+     .fixedPositoin{
+        width: 100%;
+        height: 500px;
+        background: gold;
+     }
+     .fixedPositoin > div{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background: royalblue;
+        width: 100px;
+        height: 100px;
+     }
+
+
+    </style>
+     <div class="blankPosition">
+        <div>blank</div>
+     </div>
+     <div class="relativePosition">
+        <div>relative</div>
+        <div>relative</div>
+     </div>
+     <div class="absolutePosition">
+        <div>absolute</div>
+    </div>
+        <div class="fixedPositoin">
+            <div>fixed</div>
+     </div>
+    
+   
+</body>
+</html>
